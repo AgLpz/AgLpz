@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-rows: .5fr .5fr 9fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "footer";
+}
+.header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    background-color: rgb(167, 177, 25);
+}
+.navbar {
+    grid-area: navbar;
+    background-color: blue;
+}
+.main {
+    grid-area: main;
+    background-color: blueviolet;
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(43, 226, 73); 
+}
+
+.perroImg {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    object-fit: cover;
+}
