@@ -5,7 +5,7 @@
 }
 .container {
     display: grid;
-    grid-template-rows: .5fr .5fr 9fr 3fr;
+    grid-template-rows: 1fr 1fr 13fr 7fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
@@ -24,19 +24,42 @@
 .navbar {
     grid-area: navbar;
     background-color: blue;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    /* error pading */
+    padding: 30px;
 }
 .main {
     grid-area: main;
-    background-color: blueviolet;
+    background-image: url('./img/unknown.png');
+    background-size: cover;
 }
 .footer {
     grid-area: footer;
     background-color: rgb(43, 226, 73); 
 }
-
+.perro {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
 .perroImg {
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 800px;
     background-size: cover;
     object-fit: cover;
+    
+}
+.navbar li {
+    display: inline;
+    text-decoration: none;
+
+}
+.navbar li a {
+    color: white;
+    font-size: 16px;
+    margin: 0px 60px;
 }
